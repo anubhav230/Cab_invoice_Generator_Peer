@@ -1,9 +1,20 @@
 package com.invoicegeneratortest;
 
+import com.invoicegenerator.InvoiceGenerator;
+import com.invoicegenerator.InvoiceSummary;
+import com.invoicegenerator.Ride;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class InvoiceGeneratorTest {
+
+    InvoiceGenerator invoiceGenerator;
+
+    @Before
+    public void setUp() {
+        invoiceGenerator = new InvoiceGenerator();
+    }
 
     @Test
     public void givenDistanceAndTime_ShouldReturnTotalFare() {
@@ -24,12 +35,13 @@ public class InvoiceGeneratorTest {
     }
 
     @Test
-    public void givenMultipleRide_ShouldReturnTotalFare() {
-        InvoiceGenerator invoiceGenerator = new InvoiceGenerator();
+    public void givenMultipleRide_ShouldReturnInvoiceSummary() {
         Ride[] rides = {new Ride(2.0, 5),
-                        new Ride(0.1, 1)
-                        };
-        double fare = invoiceGenerator.calculateFare(rides);
-        Assert.assertEquals(30, fare, 0.0);
+                new Ride(0.1, 1),
+                new Ride(4.0, 25),
+                new Ride(3.0, 20)};
+        InvoiceSummary summary = invoiceGenerator.calculateFare(rides);
+        InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(4, 145.0);
+        Assert.assertEquals(expectedInvoiceSummary,summary);
     }
 }

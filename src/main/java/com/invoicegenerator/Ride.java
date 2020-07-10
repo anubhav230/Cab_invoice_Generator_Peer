@@ -1,4 +1,4 @@
-package com.invoicegeneratortest;
+package com.invoicegenerator;
 
 public class Ride {
     public final double distance;
