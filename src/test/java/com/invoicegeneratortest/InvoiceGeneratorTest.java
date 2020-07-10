@@ -44,4 +44,5 @@ public class InvoiceGeneratorTest {
         InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(4, 145.0);
         Assert.assertEquals(expectedInvoiceSummary,summary);
     }
+
 }
