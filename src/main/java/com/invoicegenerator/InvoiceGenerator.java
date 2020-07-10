@@ -16,4 +16,7 @@ public class InvoiceGenerator {
         }
         return new InvoiceSummary(rides.length, totalFare);
     }
+
+    public void addRide(String UserId, Ride[] rides) {
+    }
 }
