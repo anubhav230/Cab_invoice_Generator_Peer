@@ -6,7 +6,7 @@ import org.junit.Test;
 public class InvoiceGeneratorTest {
 
     @Test
-    public void givenDistanceAndTime_ShouldReturnTotalFair() {
+    public void givenDistanceAndTime_ShouldReturnTotalFare() {
         InvoiceGenerator invoiceGenerator = new InvoiceGenerator();
         double distance = 2.0;
         int time = 5;
