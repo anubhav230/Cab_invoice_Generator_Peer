@@ -1,8 +1,9 @@
 package com.invoicegeneratortest;
 
-import com.invoicegenerator.InvoiceGenerator;
-import com.invoicegenerator.InvoiceSummary;
-import com.invoicegenerator.Ride;
+import com.invoicegenerator.services.InvoiceGenerator;
+import com.invoicegenerator.services.InvoiceSummary;
+import com.invoicegenerator.services.Ride;
+import com.invoicegenerator.utility.RideType;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
