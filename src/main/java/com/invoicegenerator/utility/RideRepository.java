@@ -1,6 +1,6 @@
 package com.invoicegenerator.utility;
 
-import com.invoicegenerator.services.Ride;
+import com.invoicegenerator.models.Ride;
 
 import java.util.ArrayList;
 import java.util.Arrays;

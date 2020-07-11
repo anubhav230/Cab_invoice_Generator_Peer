@@ -1,5 +1,6 @@
 package com.invoicegenerator.services;
 
+import com.invoicegenerator.models.Ride;
 import com.invoicegenerator.utility.RideRepository;
 import com.invoicegenerator.utility.RideType;
 

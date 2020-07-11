@@ -1,4 +1,4 @@
-package com.invoicegenerator.services;
+package com.invoicegenerator.models;
 
 import com.invoicegenerator.utility.RideType;
 
